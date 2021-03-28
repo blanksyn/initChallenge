@@ -1,8 +1,9 @@
+
 .card{
     text-align: center;
     width: 20%;
-    background-color: lavender;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(120deg, #e7d7a1,#eba28e);
+    font-family: "Poppins", sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,4 +32,8 @@ label{
     text-decoration: underline;
     display: inline-block;
     
+}
+
+form button:hover{
+    background-color: wheat;
 }
