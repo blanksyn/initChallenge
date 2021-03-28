@@ -1,0 +1,22 @@
+h1{
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 500;
+}
+
+mat-card{
+  text-align: center;
+    width: auto;
+    background-color: lavender;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ mat-card button{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

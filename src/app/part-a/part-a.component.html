@@ -1,1 +1,12 @@
-<p>part-a works!</p>
+<form action="">
+  <h1>Init challenge part 1</h1>
+  <mat-card>
+    <mat-card-content>
+      <label>Enter number: </label>
+      <input type="number" [formControl]="num">
+    </mat-card-content>
+    <button mat-raised-button color="primary" (click)= "showAnsA()">Answer A</button>
+    <button mat-raised-button color="primary" (click)= "showAnsB()">Answer B</button>
+    <button mat-raised-button color="primary" (click)= "showAnsC()">Answer C</button>
+  </mat-card>
+</form>
