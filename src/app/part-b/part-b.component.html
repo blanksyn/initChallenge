@@ -1,0 +1,36 @@
+<hr/>
+<h1>Init Challenge Part 2</h1>
+<form [formGroup] = "initPart2">
+    <mat-card id="card" class="card">  
+        <pre></pre>
+        <mat-card-content>
+            <div>
+                <mat-form-field hintLabel ="e.g. 16q4Pinyna...">
+                    <input required matInput placeholder="Bitcoin Value" type="text" class="form-control" formControlName="bit" maxlength="35" id="bit" ngModel>
+                    <mat-hint align="end">{{bit.value?.length||0}}/35</mat-hint>
+                </mat-form-field>
+                    <div class="error" *ngIf="bit.invalid && bit.touched">Bitcoin value is required.
+                    </div>
+            </div>
+            <pre></pre>
+            <div>
+                <mat-form-field hintLabel="e.g. 35.00">
+                    <input required matInput placeholder="Decimal Value"  type="text" class="form-control" formControlName="decimal"  ngModel>
+                </mat-form-field>
+                <div class="error" *ngIf="decimal.invalid && decimal.touched">Decimal value is required.
+                </div>
+            </div>
+            <pre></pre>
+            <div>
+                <mat-form-field hintLabel="e.g. 123456">
+                    <input required matInput placeholder="SMS OTP"  type="number" class="form-control" formControlName="otp"  ngModel>
+                </mat-form-field>
+                <div class="error" *ngIf="otp.invalid && otp.touched">SMS OTP is required.
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">Send BTC</button>
+        </mat-card-actions>
+    </mat-card>
+</form>
